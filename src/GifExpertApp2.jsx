@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { AddCategory } from "./components/AddCategory";
 
 useState
 export const GifExpertApp2 = () => {
@@ -14,7 +15,7 @@ export const GifExpertApp2 = () => {
     <> 
 
     <h1>GifExpertApp2</h1>
-
+    <AddCategory/>
     
 
     <ol>
