@@ -1,9 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { GifExpertAdd2 } from './GifExpertAdd2.jsx'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { GifExpertApp2 } from './GifExpertApp2.jsx';
+import './styles.css';
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <GifExpertAdd2 />
+    <GifExpertApp2 />
   </React.StrictMode>,
 )
