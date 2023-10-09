@@ -14,6 +14,7 @@ export const GifExpertApp2 = () => {
       lastCategorie.toLowerCase())
       .includes(newCategory.toLowerCase()))return;
       setCategories([newCategory,...categories])
+      //Código para agregar categorias únicas
   };
 
   return (
