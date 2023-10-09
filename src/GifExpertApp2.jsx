@@ -6,8 +6,11 @@ export const GifExpertApp2 = () => {
   
   const [categories, setCategories] = useState(['Metallica','Megadeth']);
   
+
+
   const onAddCategory = () => {
     setCategories(['Slayer',...categories])
+    
   };
 
   return (
@@ -15,7 +18,7 @@ export const GifExpertApp2 = () => {
     <> 
 
     <h1>GifExpertApp2</h1>
-    <AddCategory/>
+    <AddCategory setCategories={setCategories}/>
     
 
     <ol>
