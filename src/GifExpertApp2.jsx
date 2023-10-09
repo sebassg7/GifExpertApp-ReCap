@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { AddCategory } from "./components/AddCategory";
+import { GifGrid } from "./components/GifGrid";
 
-useState
+
 export const GifExpertApp2 = () => {
   
   const [categories, setCategories] = useState(['Metallica','Megadeth']);
@@ -27,15 +28,16 @@ export const GifExpertApp2 = () => {
     />
     
 
-    <ol>
+  
       {
-          categories.map(category => {
-            return(
-              <li key={category}>{category}</li>
+          categories.map(category => 
+            (
+              <GifGrid key={category} 
+              category={category}/>
             )
-          })
+          )
       }
-    </ol>
+    
 
     <button onClick={onAddCategory}>
       Agregar Categoria
