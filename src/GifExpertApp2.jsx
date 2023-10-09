@@ -8,9 +8,12 @@ export const GifExpertApp2 = () => {
   
 
 
-  const onAddCategory = () => {
-    setCategories(['Slayer',...categories])
-    
+  const onAddCategory = (newCategory) => {
+   
+    if(categories.map(lastCategorie => 
+      lastCategorie.toLowerCase())
+      .includes(newCategory.toLowerCase()))return;
+      setCategories([newCategory,...categories])
   };
 
   return (
@@ -18,7 +21,9 @@ export const GifExpertApp2 = () => {
     <> 
 
     <h1>GifExpertApp2</h1>
-    <AddCategory setCategories={setCategories}/>
+    <AddCategory 
+      onNewCategory = { newCategoryInput => onAddCategory(newCategoryInput)}
+    />
     
 
     <ol>
