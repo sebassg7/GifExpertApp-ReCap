@@ -5,7 +5,7 @@ import { GifGrid } from "./components/GifGrid";
 
 export const GifExpertApp2 = () => {
   
-  const [categories, setCategories] = useState(['Metallica','Megadeth']);
+  const [categories, setCategories] = useState(['Megadeth']);
   
 
 
@@ -37,12 +37,6 @@ export const GifExpertApp2 = () => {
             )
           )
       }
-    
-
-    <button onClick={onAddCategory}>
-      Agregar Categoria
-    </button>
-    
 
     </>
     
